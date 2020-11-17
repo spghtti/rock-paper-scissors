@@ -48,24 +48,29 @@ table {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: white;
     font-size: 40px;
 	font-style: italic;
 }
 
 h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
+	color: white;
+	font-size: 50px;
+	font-style: bold;
 }
 
 
 p {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: white;
 	font-style: normal;
+	font-size: 20px;
 }
 
 button {
-	font-size: 20px;
+	font-size: 30px;
 }
 .text-outer {
 	display: flex;
@@ -74,6 +79,7 @@ button {
 	height: 100vh;
 	flex-direction: column;
 	text-align: center;
+	background-color: rgb(14, 12, 12);
 }
 
 .subhead {
@@ -92,17 +98,18 @@ button {
     display: flex;
     flex-flow:row wrap;
 	flex-direction:row;
-	font-family: 'Roboto', sans-serif
-	font-style: normal;
-	opacity: 0.5; 
+	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .tally {
 	padding-right: 60px;
 	padding-top: 15px;
+	font-size: 20px;
 }
 
 .play {
 	padding-left: 60px;
 	padding-top: 15px;
+	font-size: 20px;
 }

@@ -10,24 +10,15 @@ buttons.forEach((button) => {   //Turns buttons into player choice and plays aga
         let computerSelection = computerPlay();
         playRound(event.target.id, computerSelection);
         
-
-        const tally = document.querySelector('#tally');
-        const results = document.createElement('div');
-        results.classList.add('results');
-        results.textContent = `Human: ${playerWins} | Computer: ${computerWins}`;
-        tally.appendChild(results);
-
-        const play = document.querySelector('#play');
-        const pvc = document.createElement('div');
-        pvc.classList.add('pvc');
-        pvc.textContent = `You picked ${event.target.id} | Computer picked ${computerSelection}`;
-        play.appendChild(pvc);
+        document.getElementById("tally").textContent=`Human: ${playerWins} | Computer: ${computerWins}`
+   
+        document.getElementById("play").textContent=`You picked: ${event.target.id} | Computer picked: ${computerSelection}`
 
         if (computerWins == 5) {    // victory condition if computer wins
             const victoryMsg = document.querySelector('#victory');
             const winner = document.createElement('div');
             winner.classList.add('winner');
-            winner.textContent = 'Computer wins!'
+            winner.textContent = 'Computer wins :('
             victoryMsg.appendChild(winner);
             setTimeout(location.reload, 3000);
             setTimeout(function() {
@@ -39,7 +30,7 @@ buttons.forEach((button) => {   //Turns buttons into player choice and plays aga
             const victoryMsg = document.querySelector('#victory');
             const winner = document.createElement('div');
             winner.classList.add('winner');
-            winner.textContent = 'You win!'
+            winner.textContent = 'YOU WIN :)'
             victoryMsg.appendChild(winner);
             setTimeout(function() {
                 location.reload();
