@@ -1,3 +1,3 @@
 # rocks-paper-scissors
 
-To play, open rockPaperScissors.html and open the console ('F12' on Firefox).
+Assignment part of The Odin Project's Web Development 101 course.
